@@ -37,7 +37,8 @@ RUN dnf install -y python3 python3-requests && \
         iproute dnsmasq httpd qemu-img iscsi-initiator-utils parted gdisk psmisc \
         mariadb-server genisoimage python3-ironic-prometheus-exporter \
         openstack-ironic-staging-drivers \
-        python3-jinja2 python3-sushy-oem-idrac && \
+        python3-jinja2 python3-sushy-oem-idrac \
+        python3-bcrypt && \
     dnf clean all && \
     rm -rf /var/cache/{yum,dnf}/*
 
